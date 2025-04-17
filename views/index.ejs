@@ -1,0 +1,19 @@
+<%- include('header.ejs') %>
+<% if(guests && guests.length > 0) { guests.forEach( guest => { %>
+    <div class="main">
+        <p class="pMain"><%= guest.name %></p>
+        <p class="pLessMain"><%= guest.description %></p>
+    </div>
+<% }) } else { %>
+    <div class="main">
+        <p class="pMain">Find the Next Guest for Your Podcast Here!</p>
+        <br>
+        <form action="/" method="post">
+            <label for="description">What is Your Podcast About?</label>
+            <input type="text" name="description" id="description">
+            <br><br>
+            <button type="submit">Find Guests!</button>
+        </form>
+    </div>
+<% } %>
+<%- include('footer.ejs') %>

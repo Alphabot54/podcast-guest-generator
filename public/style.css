@@ -1,0 +1,119 @@
+/*
+Colors: https://coolors.co/palette/d9ed92-b5e48c-99d98c-76c893-52b69a-34a0a4-168aad-1a759f-1e6091-184e77
+Font-family: "Anton", sans-serif;
+*/
+:root {
+    --blue-0: #184E77;
+    --blue-1: #1E6091;
+    --blue-2: #1A759F;
+    --blue-3: #168AAD;
+    --teal-0: #34A0A4;
+    --teal-1: #52B69A;
+    --green-0: #76C893;
+    --green-1: #99D98C;
+    --green-2: #B5E48C;
+    --green-3: #D9ED92;
+    --white: #f9f9f6;
+}
+
+/* General */
+body {
+    background: linear-gradient(to bottom, var(--teal-1), var(--blue-3), var(--teal-0));
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-family: "Anton", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    flex: 1;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to bottom, var(--blue-0), var(--blue-2));
+}
+#pHead {
+    padding-top: 1.5vh;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 900;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to bottom, var(--blue-2), var(--blue-0));
+}
+#pFoot {
+    text-align: center;
+    font-size: 3vh;
+    padding-top: 3vh;
+}
+
+/* Main - Form */
+.main {
+    background: var(--teal-1);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 600px;
+    text-align: center;
+}
+.pMain {
+    font-size: 3.5vh;
+}
+.pLessMain {
+    font-size: 2.5vh;
+}
+label {
+    font-size: 3vh;
+    font-style: italic;
+}
+input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    font-size: 2.5vh;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    color: var(--blue-0);
+}
+input:focus {
+    outline: none;
+    border-color: #5b9df9;
+    box-shadow: 0 0 0 3px var(--blue-3);
+}
+button {
+    padding: 12px 24px;
+    background-color: var(--blue-3);
+    color: var(--white);
+    font-family: "Anton", sans-serif;
+    font-weight: 300;
+    font-size: 2.5vh;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: var(--blue-2);
+    transform: translateY(-2px);
+}
+

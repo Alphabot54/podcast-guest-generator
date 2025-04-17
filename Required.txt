@@ -1,0 +1,6 @@
+Node.js
+Express.js
+path
+openai
+dotenv
+url
