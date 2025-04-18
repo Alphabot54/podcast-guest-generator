@@ -40,7 +40,6 @@ app.post("/", async (req, res) => {
         { role: "system", content: "You are a helpful assistant that returns structured JSON." },
         { role: "user", content: prompt }
       ],
-      max_tokens: 500
     });
 
     const output = response.choices[0].message.content;

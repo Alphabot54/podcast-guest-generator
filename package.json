@@ -1,0 +1,30 @@
+{
+    "name": "podcast-guest-generator",
+    "version": "1.0.0",
+    "description": "An Express app that uses the ChatGPT API to suggest podcast guests based on the episode description.",
+    "main": "server.js",
+    "type":"module",
+    "scripts": {
+      "start": "node server.js",
+      "dev": "nodemon server.js"
+    },
+    "keywords": [
+      "express",
+      "ejs",
+      "openai",
+      "chatgpt",
+      "podcast",
+      "guest-generator"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+      "dotenv": "^16.4.0",
+      "ejs": "^3.1.9",
+      "express": "^4.18.2",
+      "openai": "^4.0.0"
+    },
+    "devDependencies": {
+      "nodemon": "^3.0.2"
+    }
+  }
